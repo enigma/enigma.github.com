@@ -30,6 +30,8 @@
     .mask9 { background: #2D0 ;}
     .mask10 { background: #0F0 ;}
     
+    .guida { float: left; width: 10em; font-size: 0.9em; }
+    
     </style> 
     
 </head> 
@@ -37,12 +39,16 @@
     <h1>CalMask</h1> 
     <hr /> 
     
-    <noscript>Questo sito non funziona senza JavaScript.</noscript> 
+    <noscript>Questo sito non funziona senza JavaScript.</noscript>
+    <div class="guida">
+    	<h2>Select</h2>
+    	<span>Usa il <b>mouse</b> per selezionare le ore della settimana che hai gi&agrave; impegnate.<br /><br />
+    	Usa <b>ctrl</b> per selezioni/deselezioni multiple</span>
+    </div>
     <div id="calmask"> 
                 
     </div>
-    <!--<div id="calmask_mask_show" style="display:none">
-    </div>-->
+    
     <div id="calmask_mask">
     	<textarea name="mask" rows="20" cols="20" id="calmask_mask_textarea"></textarea>
     	<br /><input type="button" value="Mask" id="calmask_maskbtn" />
@@ -50,7 +56,12 @@
     <hr />
     <div id="calmask_controller">
         <label>Configurazione:<input type="text" length="66" id="calmask_sign" value="ciao" /></label>
-        <input type="button" value="Load" id="calmask_loadbtn" />
+        <input type="button" value="Load" id="calmask_loadbtn" /><br />
+        Copia il <b>codice</b> di configurazione e inoltralo alla mailing list.<br /><br />
+        Inserendo i vari codici, uno per riga, nell'area in alto a destra <br />
+        e cliccando su <b>Mask</b> &egrave; possibile far apparire una <br />
+        maschera con gli orari pi&ugrave; comodi per tutti.
+        
     </div>       
 </body> 
 </html>

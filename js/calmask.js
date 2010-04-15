@@ -168,26 +168,6 @@ $(document).ready(function(){
     });
     
     
-    // Mask part
-    /*
-    id = '#calmask_mask_show';
-    hour = 0;
-    $(id).append(' <ol id="calmask_calendar"> </ol>');
-    id = "#calmask_calendar";
-    
-    $(id).append('  <li class="calmask_box_sys">Ora</li>');
-    for (var i=0; i < days.length; i++) {
-        $(id).append('  <li class="calmask_box_sys">'+ days[i]+'</li>');
-    }
-    
-    for (var j=8; j < 20; j++) {
-        $(id).append('  <li class="calmask_box_sys">'+j+'-'+(j+1)+'</li>');
-        for (var k=0; k < 6; k++) {
-            //$(id).append('  <li class="calmask_box ui-widget-content">'+(hour++)+'</li>');
-            $(id).append('  <li class="calmask_box" id="calmask_mask_item'+(hour++)+'"></li>');
-        }
-    }*/
-    
     var createArrayMask = function(format_array) {
         var tot = format_array.length;
         var mask = arrayFromStr(strFromFormat(format_array[0]));
@@ -221,9 +201,6 @@ $(document).ready(function(){
     $('#calmask_maskbtn').click(function() {
         var arrayMask = arrayMaskFromStr($('#calmask_mask_textarea').val());
         applyMask("calmask_item", arrayMask);
-        //$('#calmas_mask_show').css('display', 'inherit');
-        //$('#calmask').css('display', 'none');
-        
         
     });
     

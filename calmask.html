@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html> 
+<head> 
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"> 
+    <title>CalMask</title> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>-->
+    <script src="js/jquery.ui-edited.js"></script>
+    <script src="js/calmask.js"></script>
+    
+    <style type="text/css"> 
+    #feedback { font-size: 1.4em; }
+    #selectable .ui-selecting { background: #FECA40; }
+    #selectable .ui-selected { background: #F39814; color: white; }
+    #selectable { list-style-type: none; margin: auto; padding: 0;  width: 680px;}
+    #selectable li { margin: 3px; padding: 1px; float: left; width: 80px; height: 20px; font-size: 1.2em; text-align: center; }
+    .calmask_box { background: #EEE; color: #F00;}
+    hr { clear: both; }
+    #calmask_controller { text-align: center; }
+    .mask0 { background: #F00 ;}
+    .mask1 { background: #A50 ;}
+    .mask2 { background: #960 ;}
+    .mask3 { background: #870 ;}
+    .mask4 { background: #780 ;}
+    .mask5 { background: #690 ;}
+    .mask6 { background: #5A0 ;}
+    .mask7 { background: #4B0 ;}
+    .mask8 { background: #3C0 ;}
+    .mask9 { background: #2D0 ;}
+    .mask10 { background: #0F0 ;}
+    
+    </style> 
+    
+</head> 
+<body> 
+    <h1>CalMask</h1> 
+    <hr /> 
+    
+    <noscript>Questo sito non funziona senza JavaScript.</noscript> 
+    <div id="calmask"> 
+                
+    </div>
+    <!--<div id="calmask_mask_show" style="display:none">
+    </div>-->
+    <div id="calmask_mask">
+    	<textarea name="mask" rows="20" cols="20" id="calmask_mask_textarea"></textarea>
+    	<br /><input type="button" value="Mask" id="calmask_maskbtn" />
+    </div>
+    <hr />
+    <div id="calmask_controller">
+        <label>Configurazione:<input type="text" length="66" id="calmask_sign" value="ciao" /></label>
+        <input type="button" value="Load" id="calmask_loadbtn" />
+    </div>       
+</body> 
+</html>

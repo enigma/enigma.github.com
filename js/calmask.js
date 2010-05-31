@@ -154,7 +154,7 @@ $(document).ready(function(){
     };
     
     
-    var base = arrayFromStr(strFromFormat('00000003F-249251041'));       
+    var base = arrayFromStr(strFromFormat('00000003F-041041041'));       
     Load(base, 0);
     $(".ui-selected").selectable({ disabled: true });
     
